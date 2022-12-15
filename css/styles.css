@@ -1661,14 +1661,14 @@ nav {
 	.layout {
 		z-index: 1;
 		width: 100%;
-		height: 4320px;
+		height: 5820px;
 		position: relative;
 		left: 0px;
 		top:40px;
 		overflow: visible;
 	}
 	.layout p {
-		height: calc(100% - 50px);
+		height: calc(100% - 20px);
 		z-index: 2;
 		position: relative;
 		color: white;
@@ -1691,10 +1691,11 @@ nav {
 		top: 36px;
 		z-index: 15;
 		border-left: #8b8b8b 1px solid;
+		overflow: hidden;
 	}
 .layout .sticky a .button {
 	border-right: #8b8b8b 1px solid;
-	width: calc(100% / 5 - 1px);
+	width: calc(100% / 4 - 1px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1704,5 +1705,95 @@ nav {
 	font-family: 'Mukta', sans-serif;
 	text-align: center;
 	font-weight: 200;
+
+}
+.reference img{
+	z-index: 2;
+	width: 100%;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.layout .pos-2 {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 10px 0 10px;
+}
+.layout .pos-3 {
+	position: relative;
+	width: 100%;
+	height: 800px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.layout .pos-4 {
+	position: relative;
+	width: 100%;
+	height: 900px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.layout .pos-5 {
+	position: relative;
+	width: 100%;
+	height: 1100px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.layout .pos-6 {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.layout .pos-7 {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.layout .pos-8 {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.layout .pos-9 {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 }
