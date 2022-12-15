@@ -129,16 +129,6 @@ nav {
 
 }
 
-/* Strona postaci */
-.layout {
-	z-index: 1;
-	width: 1100px;
-	height: 4320px;
-	position: relative;
-	left: 0px;
-	top:40px;
-	overflow: visible;
-}
 .layout hr {
 	height: 2px;
   	background-color: rgba(225,225,225,0.2);
@@ -157,13 +147,14 @@ nav {
 .layout .sticky{
 	align-self: normal;
 	justify-self: normal;
-	position: sticky;
 	position: -webkit-sticky;/* required */
+	position: sticky;
 	background-color: rgba(0, 0, 0, .5);
 	height: 35px;
 	width: 100%;
 	top: 36px;
 	z-index: 15;
+	border-left: #8b8b8b 1px solid;
 }
 
 .reference {
@@ -305,9 +296,6 @@ nav {
 	font-family: 'Mukta', sans-serif;
 	text-align: center;
 	font-weight: 200;
-}
-.layout .sticky {
-	border-left: #8b8b8b 1px solid;
 }
 .layout .pos-flex {
 	position: relative;
@@ -986,6 +974,17 @@ nav {
 	height: 1px;
 	width: 400px;
 }
+
+/* Strona postaci */
+.layout {
+	z-index: 1;
+	width: 1100px;
+	height: 4320px;
+	position: relative;
+	left: 0px;
+	top:40px;
+	overflow: visible;
+}
 }
 
 
@@ -1531,6 +1530,17 @@ nav {
 	text-align: center;
 }
 
+/* Strona postaci */
+.layout {
+	z-index: 1;
+	width: 1100px;
+	height: 4820px;
+	position: relative;
+	left: 0px;
+	top:40px;
+	overflow: visible;
+}
+
 .layout .pos-2 {
 	position: relative;
 	width: 100%;
@@ -1648,4 +1658,51 @@ nav {
 		height: 200px;
 		width: 100%;
 	}
+	.layout {
+		z-index: 1;
+		width: 100%;
+		height: 4320px;
+		position: relative;
+		left: 0px;
+		top:40px;
+		overflow: visible;
+	}
+	.layout p {
+		height: calc(100% - 50px);
+		z-index: 2;
+		position: relative;
+		color: white;
+		font-size: 25px;
+		font-family: 'Mukta', sans-serif;
+		text-align: center;
+		font-weight: 200;	
+		margin-right: 150px;
+		justify-content: center;
+		margin: 0 25px 0 25px;
+	}
+.layout .sticky{
+		align-self: normal;
+		justify-self: normal;
+		position: -webkit-sticky;/* required */
+		position: sticky;
+		background-color: rgba(0, 0, 0, .5);
+		height: 35px;
+		width: 100%;
+		top: 36px;
+		z-index: 15;
+		border-left: #8b8b8b 1px solid;
+	}
+.layout .sticky a .button {
+	border-right: #8b8b8b 1px solid;
+	width: calc(100% / 5 - 1px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+	float: left;
+	color: lightcoral;
+	font-family: 'Mukta', sans-serif;
+	text-align: center;
+	font-weight: 200;
+}
 }
