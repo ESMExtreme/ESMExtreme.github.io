@@ -97,6 +97,50 @@ nav {
 	transition: 0.2s;
 	
 }
+
+.ios {
+	position: absolute;
+	top:-20px;
+	width: 0px;
+	height: 0px;
+	z-index: 0;
+	overflow: hidden;
+}
+.ios img {
+	height: 0px;
+	width: 0px;
+}
+@supports not (position: absolute) {
+	.ios {
+		position: absolute;
+		top:0px;
+		width: 100%;
+		height: 100%;
+		z-index: 100;
+		background-color: #0084FF;
+		color: #fff;
+		font-size: 33px;
+		overflow: hidden;
+	}
+	.ios::after {
+		content: "Strefa bez iphone";
+	}
+	.ios img {
+		height: 300px;
+		width: 300px;
+	}
+}
+.toosmall {
+	position: absolute;
+	top:0px;
+	width: 0%;
+	height: 0%;
+	z-index: 100;
+}
+.toosmall img {
+	height: 0px;
+	width: 0px;
+}
 /* view box layout */
 @viewport {
 	width: device-width ;
@@ -1060,17 +1104,6 @@ pointer-events: initial
 	align-items: center;
 	text-align: center;
 }
-.toosmall {
-	position: absolute;
-	top:0px;
-	width: 0%;
-	height: 0%;
-	z-index: 100;
-}
-.toosmall img {
-	height: 1px;
-	width: 400px;
-}
 
 /* Strona postaci */
 .layout {
@@ -1277,17 +1310,6 @@ pointer-events: initial
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-}
-.toosmall {
-	position: absolute;
-	top:0px;
-	width: 0%;
-	height: 0%;
-	z-index: 100;
-}
-.toosmall img {
-	height: 1px;
-	width: 400px;
 }
 }
 /*
