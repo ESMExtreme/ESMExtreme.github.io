@@ -110,7 +110,7 @@ nav {
 	height: 0px;
 	width: 0px;
 }
-@supports not (position: absolute) {
+@supports not (position: relative) {
 	.ios {
 		position: absolute;
 		top:0px;
