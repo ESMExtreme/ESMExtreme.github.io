@@ -129,6 +129,545 @@ nav {
 
 }
 
+.level-logo {
+	position: absolute;
+	height: 196px;
+	width: 172px;
+	background: url(../img/UI_HOME.png);
+	background-position: 494px 828px;
+	filter: brightness(30%);
+}
+
+.user-level {
+	position: absolute;
+	margin-top: 89px;
+	height: 34px;
+	width: 172px;
+	background: url(../img/UI_HOME.png);
+	background-position: -20px -238px;
+	background-size: auto 3650%;
+}
+
+.chart-bg {
+	position: absolute;
+	margin: -79px auto auto 54px;
+	height: 115px;
+	width: 115px;
+	background: url(../img/UI_HOME.png);
+	background-position: 0px -295px;
+	background-size: auto 1103%;
+}
+
+.chart-pr {
+	position: absolute;
+	margin: -79px auto auto 54px;
+	height: 115px;
+	width: 115px;
+	background: url(../img/UI_HOME.png);
+	background-position: 488px -398px;
+	background-size: auto 1103%;
+}
+
+.level-num {
+	font-family: 'Noto Sans SC', sans-serif;
+	color: #fff;
+	font-size: 60px;
+	font-weight: 500;
+	position: absolute;
+	margin: -60px 80px;
+}
+
+.user-info .name {
+	font-family: 'Noto Sans SC', sans-serif;
+	color: #fff;
+	font-size: 33px;
+	font-weight: 500;
+	position: absolute;
+	margin: 134px 62px;
+}
+
+.user-info .id {
+	font-family: 'Noto Sans SC', sans-serif;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	position: absolute;
+	margin: 170px 70px;
+	width: 100%;
+}
+
+.mark {
+width: 100%;
+height: 100%;
+overflow: visible;
+}
+
+.layer {
+position: relative;
+pointer-events: none
+}
+
+.cover {
+position: absolute;
+max-width: none;
+height: 100%;
+}
+
+.menu.box {
+pointer-events: initial
+}
+
+/* left perspective */
+/* prefix */
+.left.menu.box {
+	width: 50%;
+	height: 100%;
+	margin: 0 auto auto 2vh;
+	transform: perspective(30em) rotateY(10deg) scale(0.9);
+	display: -webkit-flex;
+	display: flexbox;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+	z-index: 11;
+	position: absolute;
+	bottom: 40px !important;
+	top: auto  !important;
+	left: 10px;
+	}
+	
+	.left.menu.box .container .top {
+		height: 40%;
+		width: 100%
+		}
+		
+	
+	.left.menu.box .container .top .dialog {
+		background-color: rgba(0, 0, 0, .7);
+		padding: 10px 5px;
+		margin: 0 5px;
+		width: calc(100% - 20px);
+		height: 57px;
+		font-family: 'Noto Sans SC', sans-serif;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 57px;
+		transform: scale(1);
+		}
+		
+		.left.menu.box .container .top .dialog span {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: initial;
+		}
+		.left.menu.box .container .top .dialog::before {
+		content: "VOICE";
+		background-color: rgba(255, 255, 255, .7);
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 10px;
+		font-weight: 500;
+		color: #000;
+		position: absolute;
+		margin: -18px -10px;
+		width: 100px;
+		padding: 0 5px;
+		line-height: initial;
+		padding-left: 15px;
+		}
+		
+	.left.menu.box .container .bottom .reload .icon {
+		height: 40px;
+		width: 40px;
+		background: url(../img/reload.png);
+		background-size: auto 100%;
+		position: absolute;
+		margin: 8px;
+		}
+		
+		.left.menu.box .container .bottom .reload .text {
+		font-family: 'Noto Serif SC', serif;
+		color: #fff;
+		font-size: 25px;
+		font-weight: 900;
+		text-align: right;
+		padding: 13px;
+		}
+		
+	.left.menu.box .container .bottom .information .icon {
+		height: 35px;
+		width: 35px;
+		background: url(../img/UI_HOME.png);
+		background-position: -194px -897px;
+		background-size: auto 1750%;
+		position: absolute;
+		margin: 8px;
+		filter: invert(30%) brightness(50%);
+		}
+		
+		.left.menu.box .container .bottom .information .text {
+		font-family: 'Noto Serif SC', serif;
+		color: #323232;
+		font-size: 26px;
+		font-weight: 900;
+		text-align: right;
+		padding: 13px;
+		}
+		
+		/* right perspective */
+		/* prefix */
+		#right-menu-layer {
+		right: 0 !important;
+		left: auto !important;
+		bottom: 0 !important;
+		top: auto !important
+		}
+			
+	.right.menu.box {
+		width: 50%;
+		height: 100%;
+		margin: 0 -80px auto auto;
+		transform: perspective(30em) rotateY(-10deg) scale(0.9);
+		margin: 0 auto auto 2vh;
+		display: -webkit-flex;
+		display: flexbox;
+		flex-flow: column nowrap;
+		justify-content: flex-end;
+		z-index: 11;
+		position: absolute;
+		bottom: 40px !important;
+		top: auto  !important;
+		right: 0px;
+		}
+
+	.right.menu.box .container .intellect {
+	background-color: #fdfdfb;
+	opacity: .9;
+	height: calc(50% - 20px);
+	width: calc(100% - 20px);
+	margin: 8px 0 0 80px;
+	position: absolute;
+	flex-flow: row nowrap;
+	}
+	
+	.right.menu.box .container .intellect::after {
+	content: "";
+	background-color: #ff5e19;
+	opacity: .9;
+	height: 6px;
+	width: 30%;
+	margin: -3px 0 0 calc(35%);
+	position: absolute;
+	}
+	
+	.right.menu.box .container .intellect .icon {
+	margin-top: 15.5px;
+	margin-left: calc(99% - 150px );
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	background: url(../img/UI_HOME.png);
+	background-position: -588px -751px;
+	background-size: auto 1600%;
+	filter: invert(20%);
+	transform: scale(1);
+	opacity: .5
+	}
+	
+	.right.menu.box .container .intellect .content {
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: flex-start
+	}
+	
+	.right.menu.box .container .intellect .content .figure .value {
+	color: #333333;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-size: 70px;
+	font-weight: 700;
+	text-align: right;
+	margin: 0 20px;
+	text-shadow: #8b8b8b 5px 5px 0px;
+	}
+	
+	.right.menu.box .container .intellect .content .figure .total {
+	color: #fff;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-size: 25px;
+	text-align: right;
+	margin: 15px 20px;
+	}
+	
+	.right.menu.box .container .intellect .content .battle {
+	height: 100%;
+	width: 100px;
+	height: 130px;
+	margin: 20.5px 0 0 15px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start
+	}
+	
+	.right.menu.box .container .intellect .content .battle .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #323232;
+	font-size: 60px;
+	font-weight: 900;
+	white-space: nowrap
+	}
+	
+	.right.menu.box .container .intellect .content .battle .current {
+	font-family: 'Noto Sans SC', sans-serif;
+	color: #fff;
+	background-color: #3c3c3c;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 500;
+	white-space: nowrap;
+	padding: 3px;
+	margin: 2.5px 0;
+	}
+	
+	.right.menu.box .container .intellect .content .battle .number {
+	font-family: 'Noto Sans SC', serif;
+	color: #3c3c3c;
+	font-size: 20px;
+	font-weight: 500;
+	white-space: nowrap;
+	}
+	
+	
+	.right.menu.box .container .intellect {
+		background-color: #fdfdfb;
+		opacity: .9;
+		height: calc(50% - 20px);
+		width: calc(100% - 20px);
+		margin: 8px 0 0 80px;
+		position: absolute;
+		flex-flow: row nowrap;
+		}
+		
+		.right.menu.box .container .intellect::after {
+		content: "";
+		background-color: #ff5e19;
+		opacity: .9;
+		height: 6px;
+		width: 30%;
+		margin: -3px 0 0 calc(35%);
+		position: absolute;
+		}
+		
+		.right.menu.box .container .intellect .icon {
+		margin-top: 15.5px;
+		margin-left: calc(99% - 150px );
+		width: 140px;
+		height: 140px;
+		position: absolute;
+		background: url(../img/UI_HOME.png);
+		background-position: -588px -751px;
+		background-size: auto 1600%;
+		filter: invert(20%);
+		transform: scale(1);
+		opacity: .5
+		}
+		
+		.right.menu.box .container .intellect .content {
+		height: 100%;
+		display: -webkit-flex;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: flex-start
+		}
+		
+		.right.menu.box .container .intellect .content .figure .value {
+		color: #333333;
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 70px;
+		font-weight: 700;
+		text-align: right;
+		margin: 0 20px;
+		text-shadow: #8b8b8b 5px 5px 0px;
+		}
+		
+		.right.menu.box .container .intellect .content .figure .total {
+		color: #fff;
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 25px;
+		text-align: right;
+		margin: 15px 20px;
+		}
+		
+		.right.menu.box .container .intellect .content .battle {
+		height: 100%;
+		width: 100px;
+		height: 130px;
+		margin: 20.5px 0 0 15px;
+		display: -webkit-flex;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start
+		}
+		
+		.right.menu.box .container .intellect .content .battle .text {
+		font-family: 'Noto Serif SC', serif;
+		color: #323232;
+		font-size: 60px;
+		font-weight: 900;
+		white-space: nowrap
+		}
+		
+		.right.menu.box .container .intellect .content .battle .current {
+		font-family: 'Noto Sans SC', sans-serif;
+		color: #fff;
+		background-color: #3c3c3c;
+		border-radius: 5px;
+		font-size: 20px;
+		font-weight: 500;
+		white-space: nowrap;
+		padding: 3px;
+		margin: 2.5px 0;
+		}
+		
+		.right.menu.box .container .intellect .content .battle .number {
+		font-family: 'Noto Sans SC', serif;
+		color: #3c3c3c;
+		font-size: 20px;
+		font-weight: 500;
+		white-space: nowrap;
+		}
+		
+	.right.menu.box .container .audio {
+		position: absolute;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		background-color: #fff;
+		opacity: .9;
+		height: calc(50% - 20px);
+		width: 310px;
+		top: 50%;
+		margin: 8px 0 0 80px;
+		left: calc(100% - 340px);
+		}
+		
+		.right.menu.box .container .audio .icon {
+		width: 80px;
+		height: 80px;
+		background: url(../img/UI_HOME.png);
+		background-position: 354px -330px;
+		background-size: auto 1500%;
+		position: absolute;
+		margin: 13px 0 0 166px;
+		filter: invert(20%);
+		opacity: .5
+		}
+		
+		.right.menu.box .container .audio .text {
+		font-family: 'Noto Serif SC', serif;
+		color: #323232;
+		font-size: 40px;
+		font-weight: 900;
+		white-space: nowrap;
+		margin: 15px;
+		}
+		
+		.right.menu.box .container .audio .desc {
+		font-family: 'Noto Sans SC', sans-serif;
+		color: #989898;
+		font-size: 20px;
+		font-weight: 500;
+		white-space: nowrap;
+		margin: -11px 15px;
+		}
+		.right.menu.box .container .audio .player {
+		padding: 5px;
+		padding-top: 15px;
+		filter: brightness(93%);
+		
+		}
+		/* character perspective box */
+		#char-arts-layer {
+		margin-bottom: 10px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		}
+		.char.perspective.box {
+		width: 80%;
+		margin-bottom: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		
+		}
+		
+		.char.perspective.box img {
+		height: 95vh;
+		}
+		.level-box-container {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		}
+		.level-box {
+		height: 196px;
+		width: 172px;
+		transform: scale(1);
+		/*  adapter */
+		transform-origin: center left;
+		}
+		
+.gallery .container .char {
+	width: 170px;
+	height: 300px;
+	float: left;
+	z-index: 2;
+	margin: 0.5%;
+	display: flex;
+	position: relative;
+}
+.gallery .container .char .backg{
+	width: 170px;
+	height: 300px;
+	background: url(../img/avg_ac15_5.png);
+	background-position: 743px 521px ;
+	opacity: 0.9;
+	filter: brightness(80%);
+	opacity: .7;
+	position: absolute;
+}
+.gallery .container .char img{
+	z-index: 2;
+	width: 170px;
+	height: 300px;
+	position: absolute;
+}
+.gallery .container .char .text{
+	z-index: 3;
+	width: 170px;
+	height: 50px;
+	position: absolute;
+	align-self: flex-end;
+	font-family: 'Noto Serif SC', serif;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	white-space: nowrap;
+	margin: -10px -2px;
+	text-align: center;
+}
+
+
+
+
 .layout hr {
 	height: 2px;
   	background-color: rgba(225,225,225,0.2);
@@ -352,125 +891,12 @@ nav {
 
 
 @media (min-width: 1100px) and (min-height: 700px) {
-	.level-box-container {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
 	.level-box {
 		height: 196px;
 		width: 172px;
 		transform: scale(1);
 		/*  adapter */
 		transform-origin: center left;
-	}
-	
-	.level-logo {
-		position: absolute;
-		height: 196px;
-		width: 172px;
-		background: url(../img/UI_HOME.png);
-		background-position: 494px 828px;
-		filter: brightness(30%);
-	}
-	
-	.user-level {
-		position: absolute;
-		margin-top: 89px;
-		height: 34px;
-		width: 172px;
-		background: url(../img/UI_HOME.png);
-		background-position: -20px -238px;
-		background-size: auto 3650%;
-	}
-	
-	.chart-bg {
-		position: absolute;
-		margin: -79px auto auto 54px;
-		height: 115px;
-		width: 115px;
-		background: url(../img/UI_HOME.png);
-		background-position: 0px -295px;
-		background-size: auto 1103%;
-	}
-	
-	.chart-pr {
-		position: absolute;
-		margin: -79px auto auto 54px;
-		height: 115px;
-		width: 115px;
-		background: url(../img/UI_HOME.png);
-		background-position: 488px -398px;
-		background-size: auto 1103%;
-	}
-	
-	.level-num {
-		font-family: 'Noto Sans SC', sans-serif;
-		color: #fff;
-		font-size: 60px;
-		font-weight: 500;
-		position: absolute;
-		margin: -60px 80px;
-	}
-	
-	.user-info .name {
-		font-family: 'Noto Sans SC', sans-serif;
-		color: #fff;
-		font-size: 33px;
-		font-weight: 500;
-		position: absolute;
-		margin: 134px 62px;
-	}
-	
-	.user-info .id {
-		font-family: 'Noto Sans SC', sans-serif;
-		color: #fff;
-		font-size: 15px;
-		font-weight: 500;
-		position: absolute;
-		margin: 170px 70px;
-		width: 100%;
-	}
-	
-	.mark {
-	width: 100%;
-	height: 100%;
-	overflow: visible;
-	}
-	
-	.layer {
-	position: relative;
-	pointer-events: none
-	}
-	
-	.cover {
-	position: absolute;
-	max-width: none;
-	height: 100%;
-	}
-	
-	.menu.box {
-	pointer-events: initial
-	}
-	
-	/* left perspective */
-	/* prefix */
-	
-	.left.menu.box {
-	width: 50%;
-	height: 100%;
-	margin: 0 auto auto 2vh;
-	transform: perspective(30em) rotateY(10deg) scale(0.9);
-	display: -webkit-flex;
-	display: flexbox;
-	flex-flow: column nowrap;
-	justify-content: flex-end;
-	z-index: 11;
-	position: absolute;
-	bottom: 40px !important;
-	top: auto  !important;
-	left: 10px;
 	}
 	
 	.left.menu.box .container {
@@ -486,11 +912,6 @@ nav {
 	z-index: 12;
 	}
 	
-	.left.menu.box .container .top {
-	height: 40%;
-	width: 100%
-	}
-	
 	.left.menu.box .container .bottom {
 	height: 60%;
 	width: 100%;
@@ -499,42 +920,6 @@ nav {
 	flex-flow: row nowrap;
 	justify-content: left;
 	}
-	
-	
-	.left.menu.box .container .top .dialog {
-	background-color: rgba(0, 0, 0, .7);
-	padding: 10px 5px;
-	margin: 0 5px;
-	width: calc(100% - 20px);
-	height: 57px;
-	font-family: 'Noto Sans SC', sans-serif;
-	color: #fff;
-	font-size: 13px;
-	font-weight: 500;
-	line-height: 57px;
-	transform: scale(1);
-	}
-	
-	.left.menu.box .container .top .dialog span {
-	display: inline-block;
-	vertical-align: middle;
-	line-height: initial;
-	}
-	.left.menu.box .container .top .dialog::before {
-	content: "VOICE";
-	background-color: rgba(255, 255, 255, .7);
-	font-family: 'Noto Sans SC', sans-serif;
-	font-size: 10px;
-	font-weight: 500;
-	color: #000;
-	position: absolute;
-	margin: -18px -10px;
-	width: 100px;
-	padding: 0 5px;
-	line-height: initial;
-	padding-left: 15px;
-	}
-	
 	
 	.left.menu.box .container .bottom .reload {
 	background-color: #424242;
@@ -545,76 +930,12 @@ nav {
 	}
 	
 	
-	.left.menu.box .container .bottom .reload .icon {
-	height: 40px;
-	width: 40px;
-	background: url(../img/reload.png);
-	background-size: auto 100%;
-	position: absolute;
-	margin: 8px;
-	}
-	
-	.left.menu.box .container .bottom .reload .text {
-	font-family: 'Noto Serif SC', serif;
-	color: #fff;
-	font-size: 25px;
-	font-weight: 900;
-	text-align: right;
-	padding: 13px;
-	}
-	
 	.left.menu.box .container .bottom .information {
 	background-color: #e9e9e9;
 	opacity: .9;
 	margin: 2.5px 5px 5px 5px;
 	width: calc(100% + 30px);
 	height: calc(100% - 60px); 
-	}
-	
-	.left.menu.box .container .bottom .information .icon {
-	height: 35px;
-	width: 35px;
-	background: url(../img/UI_HOME.png);
-	background-position: -194px -897px;
-	background-size: auto 1750%;
-	position: absolute;
-	margin: 8px;
-	filter: invert(30%) brightness(50%);
-	}
-	
-	.left.menu.box .container .bottom .information .text {
-	font-family: 'Noto Serif SC', serif;
-	color: #323232;
-	font-size: 26px;
-	font-weight: 900;
-	text-align: right;
-	padding: 13px;
-	}
-	
-	/* right perspective */
-	/* prefix */
-	#right-menu-layer {
-	right: 0 !important;
-	left: auto !important;
-	bottom: 0 !important;
-	top: auto !important
-	}
-	
-	.right.menu.box {
-	width: 50%;
-	height: 100%;
-	margin: 0 -80px auto auto;
-	transform: perspective(30em) rotateY(-10deg) scale(0.9);
-	margin: 0 auto auto 2vh;
-	display: -webkit-flex;
-	display: flexbox;
-	flex-flow: column nowrap;
-	justify-content: flex-end;
-	z-index: 11;
-	position: absolute;
-	bottom: 40px !important;
-	top: auto  !important;
-	right: 0px;
 	}
 	
 	.right.menu.box .container {
@@ -632,190 +953,6 @@ nav {
 	top: auto  !important;
 	right: 10%;
 	
-	}
-	
-	.right.menu.box .container .intellect {
-	background-color: #fdfdfb;
-	opacity: .9;
-	height: calc(50% - 20px);
-	width: calc(100% - 20px);
-	margin: 8px 0 0 80px;
-	position: absolute;
-	flex-flow: row nowrap;
-	}
-	
-	.right.menu.box .container .intellect::after {
-	content: "";
-	background-color: #ff5e19;
-	opacity: .9;
-	height: 6px;
-	width: 30%;
-	margin: -3px 0 0 calc(35%);
-	position: absolute;
-	}
-	
-	.right.menu.box .container .intellect .icon {
-	margin-top: 15.5px;
-	margin-left: calc(99% - 150px );
-	width: 140px;
-	height: 140px;
-	position: absolute;
-	background: url(../img/UI_HOME.png);
-	background-position: -588px -751px;
-	background-size: auto 1600%;
-	filter: invert(20%);
-	transform: scale(1);
-	opacity: .5
-	}
-	
-	.right.menu.box .container .intellect .content {
-	height: 100%;
-	display: -webkit-flex;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-	align-items: flex-start
-	}
-	
-	.right.menu.box .container .intellect .content .figure .value {
-	color: #333333;
-	font-family: 'Noto Sans SC', sans-serif;
-	font-size: 70px;
-	font-weight: 700;
-	text-align: right;
-	margin: 0 20px;
-	text-shadow: #8b8b8b 5px 5px 0px;
-	}
-	
-	.right.menu.box .container .intellect .content .figure .total {
-	color: #fff;
-	font-family: 'Noto Sans SC', sans-serif;
-	font-size: 25px;
-	text-align: right;
-	margin: 15px 20px;
-	}
-	
-	.right.menu.box .container .intellect .content .battle {
-	height: 100%;
-	width: 100px;
-	height: 130px;
-	margin: 20.5px 0 0 15px;
-	display: -webkit-flex;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start;
-	align-items: flex-start
-	}
-	
-	.right.menu.box .container .intellect .content .battle .text {
-	font-family: 'Noto Serif SC', serif;
-	color: #323232;
-	font-size: 60px;
-	font-weight: 900;
-	white-space: nowrap
-	}
-	
-	.right.menu.box .container .intellect .content .battle .current {
-	font-family: 'Noto Sans SC', sans-serif;
-	color: #fff;
-	background-color: #3c3c3c;
-	border-radius: 5px;
-	font-size: 20px;
-	font-weight: 500;
-	white-space: nowrap;
-	padding: 3px;
-	margin: 2.5px 0;
-	}
-	
-	.right.menu.box .container .intellect .content .battle .number {
-	font-family: 'Noto Sans SC', serif;
-	color: #3c3c3c;
-	font-size: 20px;
-	font-weight: 500;
-	white-space: nowrap;
-	}
-	
-	.right.menu.box .container .audio {
-	position: absolute;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-	background-color: #fff;
-	opacity: .9;
-	height: calc(50% - 20px);
-	width: 310px;
-	top: 50%;
-	margin: 8px 0 0 80px;
-	left: calc(100% - 340px);
-	}
-	
-	.right.menu.box .container .audio .icon {
-	width: 80px;
-	height: 80px;
-	background: url(../img/UI_HOME.png);
-	background-position: 354px -330px;
-	background-size: auto 1500%;
-	position: absolute;
-	margin: 13px 0 0 166px;
-	filter: invert(20%);
-	opacity: .5
-	}
-	
-	.right.menu.box .container .audio .text {
-	font-family: 'Noto Serif SC', serif;
-	color: #323232;
-	font-size: 40px;
-	font-weight: 900;
-	white-space: nowrap;
-	margin: 15px;
-	}
-	
-	.right.menu.box .container .audio .desc {
-	font-family: 'Noto Sans SC', sans-serif;
-	color: #989898;
-	font-size: 20px;
-	font-weight: 500;
-	white-space: nowrap;
-	margin: -11px 15px;
-	}
-	.right.menu.box .container .audio .player {
-	padding: 5px;
-	padding-top: 15px;
-	filter: brightness(93%);
-	
-	}
-	/* character perspective box */
-	#char-arts-layer {
-	margin-bottom: 10px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	
-	}
-	.char.perspective.box {
-	width: 80%;
-	margin-bottom: 10px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	
-	}
-	
-	.char.perspective.box img {
-	height: 95vh;
-	}
-	.level-box-container {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	}
-	.level-box {
-	height: 196px;
-	width: 172px;
-	transform: scale(1);
-	/*  adapter */
-	transform-origin: center left;
 	}
 	
 
@@ -839,46 +976,6 @@ nav {
 	height: 90%;
 	min-height: 0;
 	margin: 30px 0 0 0;
-}
-
-.gallery .container .char {
-	width: 170px;
-	height: 300px;
-	float: left;
-	z-index: 2;
-	margin: 0.5%;
-	display: flex;
-	position: relative;
-}
-.gallery .container .char .backg{
-	width: 170px;
-	height: 300px;
-	background: url(../img/avg_ac15_5.png);
-	background-position: 743px 521px ;
-	opacity: 0.9;
-	filter: brightness(80%);
-	opacity: .7;
-	position: absolute;
-}
-.gallery .container .char img{
-	z-index: 2;
-	width: 170px;
-	height: 300px;
-	position: absolute;
-}
-.gallery .container .char .text{
-	z-index: 3;
-	width: 170px;
-	height: 50px;
-	position: absolute;
-	align-self: flex-end;
-	font-family: 'Noto Serif SC', serif;
-	color: #fff;
-	font-size: 22px;
-	font-weight: 600;
-	white-space: nowrap;
-	margin: -10px -2px;
-	text-align: center;
 }
 
 /* pos2*/
@@ -1004,12 +1101,7 @@ nav {
 
 
 @media (max-width: 1100px) or (max-height:700px) {
-	.level-box-container {
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
+
 	.level-box {
 		height: 196px;
 		width: 172px;
@@ -1018,113 +1110,6 @@ nav {
 		transform-origin: center left;
 		position: absolute;
 		top: 40px
-	}
-	
-	.level-logo {
-		position: absolute;
-		height: 196px;
-		width: 172px;
-		background: url(../img/UI_HOME.png);
-		background-position: 494px 828px;
-		filter: brightness(30%);
-	}
-	
-	.user-level {
-		position: absolute;
-		margin-top: 89px;
-		height: 34px;
-		width: 172px;
-		background: url(../img/UI_HOME.png);
-		background-position: -20px -238px;
-		background-size: auto 3650%;
-	}
-	
-	.chart-bg {
-		position: absolute;
-		margin: -79px auto auto 54px;
-		height: 115px;
-		width: 115px;
-		background: url(../img/UI_HOME.png);
-		background-position: 0px -295px;
-		background-size: auto 1103%;
-	}
-	
-	.chart-pr {
-		position: absolute;
-		margin: -79px auto auto 54px;
-		height: 115px;
-		width: 115px;
-		background: url(../img/UI_HOME.png);
-		background-position: 488px -398px;
-		background-size: auto 1103%;
-	}
-	
-	.level-num {
-		font-family: 'Noto Sans SC', sans-serif;
-		color: #fff;
-		font-size: 60px;
-		font-weight: 500;
-		position: absolute;
-		margin: -60px 80px;
-	}
-	
-	.user-info .name {
-		font-family: 'Noto Sans SC', sans-serif;
-		color: #fff;
-		font-size: 30px;
-		font-weight: 500;
-		position: absolute;
-		margin: 134px 62px;
-	}
-	
-	.user-info .id {
-		font-family: 'Noto Sans SC', sans-serif;
-		color: #fff;
-		font-size: 15px;
-		font-weight: 500;
-		position: absolute;
-		margin: 206px 70px;
-		width: 100%;
-	}
-	
-	.mark {
-	width: 100%;
-	height: 100%;
-	overflow: visible;
-	}
-	
-	.layer {
-	position: relative;
-	pointer-events: none
-	}
-	
-	.cover {
-	position: absolute;
-	max-width: none;
-	height: 100%;
-	}
-	
-	.menu.box {
-	pointer-events: initial
-	}
-	
-	/* left perspective */
-	/* prefix */
-	
-	.left.menu.box {
-	width: 50%;
-	height: 100%;
-	margin: 0 auto auto 2vh;
-	transform: perspective(50em) rotateY(10deg) scale(0.9);
-	display: -webkit-flex;
-	display: flexbox;
-	flex-flow: column nowrap;
-	justify-content: flex-end;
-	z-index: 13;
-	position: absolute;
-	bottom: 40px !important;
-	top: auto  !important;
-	left: 10px;
 	}
 	
 	.left.menu.box .container {
@@ -1140,11 +1125,6 @@ nav {
 	transform-origin: bottom left;
 	}
 	
-	.left.menu.box .container .top {
-	height: 40%;
-	width: 100%
-	}
-	
 	.left.menu.box .container .bottom {
 	height: 60%;
 	width: 50%;
@@ -1152,41 +1132,6 @@ nav {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: left;
-	}
-	
-	
-	.left.menu.box .container .top .dialog {
-	background-color: rgba(0, 0, 0, .7);
-	padding: 10px 5px;
-	margin: 0 5px;
-	width: calc(100% - 20px);
-	height: 57px;
-	font-family: 'Noto Sans SC', sans-serif;
-	color: #fff;
-	font-size: 13px;
-	font-weight: 500;
-	line-height: 57px;
-	transform: scale(1);
-	}
-	
-	.left.menu.box .container .top .dialog span {
-	display: inline-block;
-	vertical-align: middle;
-	line-height: initial;
-	}
-	.left.menu.box .container .top .dialog::before {
-	content: "VOICE";
-	background-color: rgba(255, 255, 255, .7);
-	font-family: 'Noto Sans SC', sans-serif;
-	font-size: 10px;
-	font-weight: 500;
-	color: #000;
-	position: absolute;
-	margin: -18px -10px;
-	width: 100px;
-	padding: 0 5px;
-	line-height: initial;
-	padding-left: 15px;
 	}
 	
 	
@@ -1198,25 +1143,6 @@ nav {
 	height: calc(100% - 60px); 
 	}
 	
-	
-	.left.menu.box .container .bottom .reload .icon {
-	height: 40px;
-	width: 40px;
-	background: url(../img/reload.png);
-	background-size: auto 100%;
-	position: absolute;
-	margin: 8px;
-	}
-	
-	.left.menu.box .container .bottom .reload .text {
-	font-family: 'Noto Serif SC', serif;
-	color: #fff;
-	font-size: 25px;
-	font-weight: 900;
-	text-align: right;
-	padding: 13px;
-	}
-	
 	.left.menu.box .container .bottom .information {
 	background-color: #e9e9e9;
 	opacity: .9;
@@ -1225,52 +1151,7 @@ nav {
 	width: calc(30% + 100px);
 	height: calc(100% - 60px); 
 	}
-	
-	.left.menu.box .container .bottom .information .icon {
-	height: 35px;
-	width: 35px;
-	background: url(../img/UI_HOME.png);
-	background-position: -194px -897px;
-	background-size: auto 1750%;
-	position: absolute;
-	margin: 8px;
-	filter: invert(30%) brightness(50%);
-	}
-	
-	.left.menu.box .container .bottom .information .text {
-	font-family: 'Noto Serif SC', serif;
-	color: #323232;
-	font-size: 26px;
-	font-weight: 900;
-	text-align: right;
-	padding: 13px;
-	}
-	
-	/* right perspective */
-	/* prefix */
-	#right-menu-layer {
-	right: 0 !important;
-	left: auto !important;
-	bottom: 0 !important;
-	top: auto !important
-	}
-	
-	.right.menu.box {
-	width: 50%;
-	height: 100%;
-	margin: 0 -80px auto auto;
-	transform: perspective(30em) rotateY(-10deg) scale(0.9);
-	margin: 0 auto auto 2vh;
-	display: -webkit-flex;
-	display: flexbox;
-	flex-flow: column nowrap;
-	justify-content: flex-end;
-	z-index: 11;
-	position: absolute;
-	bottom: 40px !important;
-	top: auto  !important;
-	right: 0px;
-	}
+
 	
 	.right.menu.box .container {
 	height: 400px;
@@ -1286,190 +1167,6 @@ nav {
 	top: 40px !important;
 	right: 10%;
 	
-	}
-	
-	.right.menu.box .container .intellect {
-	background-color: #fdfdfb;
-	opacity: .9;
-	height: calc(50% - 20px);
-	width: calc(100% - 20px);
-	margin: 8px 0 0 80px;
-	position: absolute;
-	flex-flow: row nowrap;
-	}
-	
-	.right.menu.box .container .intellect::after {
-	content: "";
-	background-color: #ff5e19;
-	opacity: .9;
-	height: 6px;
-	width: 30%;
-	margin: -3px 0 0 calc(35%);
-	position: absolute;
-	}
-	
-	.right.menu.box .container .intellect .icon {
-	margin-top: 15.5px;
-	margin-left: calc(99% - 150px );
-	width: 140px;
-	height: 140px;
-	position: absolute;
-	background: url(../img/UI_HOME.png);
-	background-position: -588px -751px;
-	background-size: auto 1600%;
-	filter: invert(20%);
-	transform: scale(1);
-	opacity: .5
-	}
-	
-	.right.menu.box .container .intellect .content {
-	height: 100%;
-	display: -webkit-flex;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-	align-items: flex-start
-	}
-	
-	.right.menu.box .container .intellect .content .figure .value {
-	color: #333333;
-	font-family: 'Noto Sans SC', sans-serif;
-	font-size: 70px;
-	font-weight: 700;
-	text-align: right;
-	margin: 0 20px;
-	text-shadow: #8b8b8b 5px 5px 0px;
-	}
-	
-	.right.menu.box .container .intellect .content .figure .total {
-	color: #fff;
-	font-family: 'Noto Sans SC', sans-serif;
-	font-size: 25px;
-	text-align: right;
-	margin: 15px 20px;
-	}
-	
-	.right.menu.box .container .intellect .content .battle {
-	height: 100%;
-	width: 100px;
-	height: 130px;
-	margin: 20.5px 0 0 15px;
-	display: -webkit-flex;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start;
-	align-items: flex-start
-	}
-	
-	.right.menu.box .container .intellect .content .battle .text {
-	font-family: 'Noto Serif SC', serif;
-	color: #323232;
-	font-size: 60px;
-	font-weight: 900;
-	white-space: nowrap
-	}
-	
-	.right.menu.box .container .intellect .content .battle .current {
-	font-family: 'Noto Sans SC', sans-serif;
-	color: #fff;
-	background-color: #3c3c3c;
-	border-radius: 5px;
-	font-size: 20px;
-	font-weight: 500;
-	white-space: nowrap;
-	padding: 3px;
-	margin: 2.5px 0;
-	}
-	
-	.right.menu.box .container .intellect .content .battle .number {
-	font-family: 'Noto Sans SC', serif;
-	color: #3c3c3c;
-	font-size: 20px;
-	font-weight: 500;
-	white-space: nowrap;
-	}
-	
-	.right.menu.box .container .audio {
-	position: absolute;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-	background-color: #fff;
-	opacity: .9;
-	height: calc(50% - 20px);
-	width: 310px;
-	top: 50%;
-	margin: 8px 0 0 80px;
-	left: calc(100% - 340px);
-	}
-	
-	.right.menu.box .container .audio .icon {
-	width: 80px;
-	height: 80px;
-	background: url(../img/UI_HOME.png);
-	background-position: 354px -330px;
-	background-size: auto 1500%;
-	position: absolute;
-	margin: 13px 0 0 166px;
-	filter: invert(20%);
-	opacity: .5
-	}
-	
-	.right.menu.box .container .audio .text {
-	font-family: 'Noto Serif SC', serif;
-	color: #323232;
-	font-size: 40px;
-	font-weight: 900;
-	white-space: nowrap;
-	margin: 15px;
-	}
-	
-	.right.menu.box .container .audio .desc {
-	font-family: 'Noto Sans SC', sans-serif;
-	color: #989898;
-	font-size: 20px;
-	font-weight: 500;
-	white-space: nowrap;
-	margin: -11px 15px;
-	}
-	.right.menu.box .container .audio .player {
-	padding: 5px;
-	padding-top: 15px;
-	filter: brightness(93%);
-	
-	}
-	/* character perspective box */
-	#char-arts-layer {
-	margin-bottom: 10px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	
-	}
-	.char.perspective.box {
-	width: 80%;
-	margin-bottom: 10px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	
-	}
-	
-	.char.perspective.box img {
-	height: 95vh;
-	}
-	.level-box-container {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	}
-	.level-box {
-	height: 196px;
-	width: 172px;
-	transform: scale(1);
-	/*  adapter */
-	transform-origin: center left;
 	}
 	
 /*gallery*/
@@ -1489,47 +1186,6 @@ nav {
 	height: 90%;
 	min-height: 0;
 }
-
-.gallery .container .char {
-	width: 170px;
-	height: 300px;
-	float: left;
-	z-index: 2;
-	margin: 0.5%;
-	display: flex;
-	position: relative;
-}
-.gallery .container .char .backg{
-	width: 170px;
-	height: 300px;
-	background: url(../img/avg_ac15_5.png);
-	background-position: 743px 521px ;
-	opacity: 0.9;
-	filter: brightness(80%);
-	opacity: .7;
-	position: absolute;
-}
-.gallery .container .char img{
-	z-index: 2;
-	width: 170px;
-	height: 300px;
-	position: absolute;
-}
-.gallery .container .char .text{
-	z-index: 3;
-	width: 170px;
-	height: 50px;
-	position: absolute;
-	align-self: flex-end;
-	font-family: 'Noto Serif SC', serif;
-	color: #fff;
-	font-size: 22px;
-	font-weight: 600;
-	white-space: nowrap;
-	margin: -10px -2px;
-	text-align: center;
-}
-
 /* Strona postaci */
 .layout {
 	z-index: 1;
