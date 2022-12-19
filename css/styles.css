@@ -89,7 +89,16 @@ nav {
 	color: #fff;
 	font-size: 15px;
 	font-weight: 500;
-
+}
+nav audio {
+	justify-self: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 35px;
+}
+nav audio:hover {
+	margin-top: 2px;
+	transition: 0.2s;
 }
 .navbutton:hover {
 	background-color: darkgray;
