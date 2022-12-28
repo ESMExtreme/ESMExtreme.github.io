@@ -749,7 +749,7 @@ pointer-events: initial
 	border-left: #8b8b8b 1px solid;
 }
 
-.reference {
+.layout .reference {
 	z-index: 2;
 	width: 100%;
 	position: relative;
@@ -1242,8 +1242,8 @@ margin-top: 3px;
 /* Strona postaci */
 .layout {
 	z-index: 1;
-	width: 1100px;
-	height: 8255px;
+	width: calc(300px + 45%);
+	height: calc(8700px);
 	position: relative;
 	left: 0px;
 	top:40px;
@@ -1252,7 +1252,6 @@ margin-top: 3px;
 .layout .pos-2 {
 	position: relative;
 	width: 100%;
-	height: 400px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1263,17 +1262,18 @@ margin-top: 3px;
 .layout .pos-3 {
 	position: relative;
 	width: 100%;
-	height: 500px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 }
+.layout .pos-5 p {
+	margin-top: 5px;
+}
 .layout .pos-4 {
 	position: relative;
 	width: 100%;
-	height: 600px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1283,7 +1283,6 @@ margin-top: 3px;
 .layout .pos-5 {
 	position: relative;
 	width: 100%;
-	height: 700px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1293,7 +1292,6 @@ margin-top: 3px;
 .layout .pos-6 {
 	position: relative;
 	width: 100%;
-	height: 300px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1303,7 +1301,6 @@ margin-top: 3px;
 .layout .pos-7 {
 	position: relative;
 	width: 100%;
-	height: 300px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1313,7 +1310,6 @@ margin-top: 3px;
 .layout .pos-8 {
 	position: relative;
 	width: 100%;
-	height: 300px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1323,12 +1319,38 @@ margin-top: 3px;
 .layout .pos-9 {
 	position: relative;
 	width: 100%;
-	height: 200px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+}
+.layout .sticky{
+	align-self: normal;
+	justify-self: normal;
+	position: -webkit-sticky;/* required */
+	position: sticky;
+	background-color: rgba(0, 0, 0, .5);
+	height: 35px;
+	width: 100%;
+	top: 36px;
+	z-index: 15;
+	border-left: #8b8b8b 1px solid;
+	overflow: hidden;
+}
+.layout .sticky a .button {
+border-right: #8b8b8b 1px solid;
+width: calc(100% / 4 - 1px);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 35px;
+float: left;
+color: lightcoral;
+font-family: 'Mukta', sans-serif;
+text-align: center;
+font-weight: 200;
+
 }
 }
 /*
@@ -1358,7 +1380,7 @@ margin-top: 3px;
 	.layout {
 		z-index: 1;
 		width: 100%;
-		height: 5820px;
+		height: 8220px;
 		position: relative;
 		left: 0px;
 		top:40px;
@@ -1404,94 +1426,12 @@ margin-top: 3px;
 	font-weight: 200;
 
 }
-.reference img{
+.layout .reference img{
 	z-index: 2;
 	width: 100%;
 	position: relative;
 	align-items: center;
 	justify-content: center;
-	display: flex;
-	flex-direction: column;
 }
 
-.layout .pos-2 {
-	position: relative;
-	width: 100%;
-	height: 500px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 0 10px 0 10px;
-}
-.layout .pos-3 {
-	position: relative;
-	width: 100%;
-	height: 800px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-4 {
-	position: relative;
-	width: 100%;
-	height: 900px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-5 {
-	position: relative;
-	width: 100%;
-	height: 1100px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-6 {
-	position: relative;
-	width: 100%;
-	height: 300px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-7 {
-	position: relative;
-	width: 100%;
-	height: 300px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-8 {
-	position: relative;
-	width: 100%;
-	height: 300px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-9 {
-	position: relative;
-	width: 100%;
-	height: 200px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
 }
