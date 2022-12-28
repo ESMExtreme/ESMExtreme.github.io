@@ -929,7 +929,15 @@ pointer-events: initial
 	position: absolute;
 	top: 0px;
 }
-
+.layout .credits {
+	z-index: 15;
+	position: relative;
+	color: white;
+	font-size:25px;
+	font-family: 'Mukta', sans-serif;
+	text-align: center;
+	font-weight: 600;
+}
 
 
 /*
@@ -1034,19 +1042,19 @@ pointer-events: initial
 /* pos2*/
 .layout .pos-2 {
 	position: relative;
-	width: 100%;
-	height: 400px;
+	width: calc(100%-20px);
+	height: 330px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 0 10px 0 10px;
+	margin: 0 10px 0 10px;
 }
 .layout .pos-3 {
 	position: relative;
-	width: 100%;
-	height: 400px;
+	width: calc(100%-20px);
+	height: 470px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1055,8 +1063,8 @@ pointer-events: initial
 }
 .layout .pos-4 {
 	position: relative;
-	width: 100%;
-	height: 400px;
+	width: calc(100%-20px);
+	height: 420px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1065,7 +1073,7 @@ pointer-events: initial
 }
 .layout .pos-5 {
 	position: relative;
-	width: 100%;
+	width: calc(100%-20px);
 	height: 500px;
 	z-index: 1;
 	display: flex;
@@ -1073,9 +1081,12 @@ pointer-events: initial
 	align-items: center;
 	text-align: center;
 }
+.layout .pos-5 p{
+margin-top: 3px;
+}
 .layout .pos-6 {
 	position: relative;
-	width: 100%;
+	width: calc(100%-20px);
 	height: 300px;
 	z-index: 1;
 	display: flex;
@@ -1085,8 +1096,8 @@ pointer-events: initial
 }
 .layout .pos-7 {
 	position: relative;
-	width: 100%;
-	height: 300px;
+	width: calc(100%-20px);
+	height: 200px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1095,8 +1106,8 @@ pointer-events: initial
 }
 .layout .pos-8 {
 	position: relative;
-	width: 100%;
-	height: 300px;
+	width: calc(100%-20px);
+	height: 200px;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -1105,7 +1116,7 @@ pointer-events: initial
 }
 .layout .pos-9 {
 	position: relative;
-	width: 100%;
+	width: calc(100%-20px);
 	height: 200px;
 	z-index: 1;
 	display: flex;
@@ -1118,7 +1129,7 @@ pointer-events: initial
 .layout {
 	z-index: 1;
 	width: 1100px;
-	height: 4320px;
+	height: 7575px;
 	position: relative;
 	left: 0px;
 	top:40px;
@@ -1232,13 +1243,12 @@ pointer-events: initial
 .layout {
 	z-index: 1;
 	width: 1100px;
-	height: 4820px;
+	height: 8255px;
 	position: relative;
 	left: 0px;
 	top:40px;
 	overflow: visible;
 }
-
 .layout .pos-2 {
 	position: relative;
 	width: 100%;
@@ -1401,6 +1411,7 @@ pointer-events: initial
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	flex-direction: column;
 }
 
 .layout .pos-2 {
