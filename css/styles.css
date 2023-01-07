@@ -1261,7 +1261,7 @@ font-weight: 200;
 	.layout {
 		z-index: 1;
 		width: 100%;
-		height: 8220px;
+		height: max-content;
 		position: relative;
 		left: 0px;
 		top:40px;
