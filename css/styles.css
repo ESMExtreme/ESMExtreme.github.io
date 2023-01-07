@@ -41,6 +41,9 @@ header {
 	z-index: 1;
 	pointer-events: none
 }
+.break + a:hover{
+	color:#989898;
+}
 
 .author {
 	font-family: 'Noto Sans SC', sans-serif;
@@ -776,6 +779,16 @@ pointer-events: initial
 	margin: 0 0 0 0;
 
 }
+.layout h4 {
+	height: 40px;
+	z-index: 2;
+	position: relative;
+	color: white;
+	font-size: 30px;
+	font-family: 'Mukta', sans-serif;
+	margin: 0 0 0 0;
+
+}
 
 .layout .divider {
 	z-index: 2;
@@ -791,13 +804,7 @@ pointer-events: initial
 	margin: 10px 0 10px 0;
 
 }
-.layout .pos-1 {
-	z-index: 1;
-	position: static;
-	height: 650px;
-	justify-self: unset;
-	padding: 0 10px 0 10px;
-}
+
 .layout .pos-1 .right {
 	top: 80px;
 	height: 500px;
@@ -816,9 +823,24 @@ pointer-events: initial
 	font-family: 'Mukta', sans-serif;
 	text-align: center;
 	font-weight: 200;	
-	margin-right: 150px;
 	justify-content: center;
 	margin: 0 15px 0 15px;
+}
+.layout ul,li {
+	z-index: 2;
+	position: relative;
+	color: white;
+	font-size:25px;
+	font-family: 'Mukta', sans-serif;
+	font-weight: 200;	
+	margin: 0 15px 0 15px;
+}
+.layout .pos-4 img {
+	height: 250px;
+	z-index: 2;
+	position: relative;
+	left: calc(50% - 220px);
+	margin-bottom: 15px;
 }
 .layout p strong{
 	z-index: 2;
@@ -865,16 +887,7 @@ pointer-events: initial
 }
 
 
-.layout .pos-1 .left {
-	position: relative;
-	height: 500px;
-	width: 50%;
-	z-index: 1;
-	display: flex;
-	float: left;
-	align-items: center;
-	justify-content: center;
-}
+
 
 .layout .sticky a .button {
 	border-right: #8b8b8b 1px solid;
@@ -1039,101 +1052,30 @@ pointer-events: initial
 	margin: 30px 0 0 0;
 }
 
-/* pos2*/
-.layout .pos-2 {
-	position: relative;
-	width: calc(100%-20px);
-	height: 330px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	margin: 0 10px 0 10px;
-}
-.layout .pos-3 {
-	position: relative;
-	width: calc(100%-20px);
-	height: 470px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-4 {
-	position: relative;
-	width: calc(100%-20px);
-	height: 420px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-5 {
-	position: relative;
-	width: calc(100%-20px);
-	height: 500px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-5 p{
-margin-top: 3px;
-}
-.layout .pos-6 {
-	position: relative;
-	width: calc(100%-20px);
-	height: 300px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-7 {
-	position: relative;
-	width: calc(100%-20px);
-	height: 200px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-8 {
-	position: relative;
-	width: calc(100%-20px);
-	height: 200px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-9 {
-	position: relative;
-	width: calc(100%-20px);
-	height: 200px;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-
 /* Strona postaci */
 .layout {
 	z-index: 1;
 	width: 1100px;
-	height: 7575px;
+	height: max-content;
 	position: relative;
 	left: 0px;
 	top:40px;
 	overflow: visible;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.layout .pos-1 .left {
+	position: relative;
+	height: 500px;
+	width: 50%;
+	z-index: 1;
+	display: flex;
+	float: left;
+	align-items: center;
+	justify-content: center;
+	
 }
 }
 
@@ -1243,83 +1185,11 @@ margin-top: 3px;
 .layout {
 	z-index: 1;
 	width: calc(300px + 45%);
-	height: calc(8700px);
+	height: max-content;
 	position: relative;
 	left: 0px;
 	top:40px;
 	overflow: visible;
-}
-.layout .pos-2 {
-	position: relative;
-	width: 100%;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	padding: 0 10px 0 10px;
-}
-.layout .pos-3 {
-	position: relative;
-	width: 100%;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-5 p {
-	margin-top: 5px;
-}
-.layout .pos-4 {
-	position: relative;
-	width: 100%;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-5 {
-	position: relative;
-	width: 100%;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-6 {
-	position: relative;
-	width: 100%;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-7 {
-	position: relative;
-	width: 100%;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-8 {
-	position: relative;
-	width: 100%;
-	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-.layout .pos-9 {
-	position: relative;
-	width: 100%;
-	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1352,6 +1222,16 @@ text-align: center;
 font-weight: 200;
 
 }
+.layout .pos-1 .left {
+	position: absolute;
+	height: 500px;
+	width: 50%;
+	z-index: 1;
+	display: flex;
+	float: left;
+	left:0px
+	
+}
 }
 /*
 ==================================================
@@ -1359,6 +1239,7 @@ font-weight: 200;
 ================================================== 
 */
 @media (max-width: 480px) or (max-height: 499px) {
+
 	.toosmall {
 		position: absolute;
 		top:0px;
