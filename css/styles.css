@@ -852,8 +852,6 @@ pointer-events: initial
 	font-weight: 200;	
 	justify-content: center;
 	margin: 0 15px 0 15px;
-	width: calc(100vw - 30px);
-	left: 40px;
 }
 .layout p strong{
 	z-index: 2;
@@ -914,6 +912,15 @@ pointer-events: initial
 	font-family: 'Mukta', sans-serif;
 	text-align: center;
 	font-weight: 200;
+}
+.layout .pos-9 a h4 {
+	position: relative;
+	z-index: 11;
+}
+.layout .pos-9 a h4:hover {
+	position: relative;
+	z-index: 11;
+	color: #8b8b8b;
 }
 .layout .pos-flex {
 	position: relative;
