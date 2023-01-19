@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/newstyle.css">
+    <title>Strona Esme</title>
+    <link rel="icon" href="../../icon.ico" />
+    <meta name="author" content="ESMExtreme">
+    <style>
+    .sticky a .button {color: lightblue;}
+    .sticky {background-color: rgba(0, 0, 0, .5);}
+    .sticky a .button:hover{background-color: rgba(109, 109, 109, 0.8); height: 40px;}
+/* Works on Firefox */
+* {
+  scrollbar-width: 15px;
+  scrollbar-color: rgba(150,150,150,0.7) rgba(200,200,200,0.5);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(100,100,100);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(200,200,200);
+  border-radius: 20px;
+  border: 3px solid rgb(150,150,150);
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav center">
+            <a href="../../index.html">
+                <div class="center navbutton">Menu</div>
+            </a>
+            <a href="../postacie.html">
+                <div class="center navbutton">Postacie</div>
+            </a>
+            <a href="../credits.html">
+                <div class="center navbutton">Credits</div>
+            </a>
+        </div>
+    </nav>
+    <div class="sticky">
+        <a href="#pos-1">
+            <div class="button">1</div>
+        </a>
+        <a href="#pos-2">
+            <div class="button">2</div>
+        </a>
+        <a href="#pos-3">
+            <div class="button">3</div>
+        </a>
+    </div>
+    <div class="view-box">
+
+        <div class="layout">
+            <div id="pos-1" style="min-width: 100vw; height: max-content; background-color: yellow; display: flex; position:relative;">
+                <div class="controls">
+                    <a class="right" href="#pos-2"></a>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fuga enim minus laudantium reiciendis atque quo natus aliquam autem eaque? Excepturi repellendus praesentium ipsum fuga eos? Numquam minus voluptas et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime velit dolorem ullam minus cupiditate reiciendis. Qui, suscipit maiores iste beatae aspernatur, eligendi cumque officiis illum ad explicabo fugit nam id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate fuga molestiae excepturi vero sit nobis, explicabo labore iusto earum qui nihil quis repellendus eum atque veritatis at unde obcaecati?
+                </div>
+                
+            </div>
+            <div id="pos-2" style="min-width: 100vw; height: max-content; background-color: red; display: flex; position:relative;">
+                <div class="controls">
+                    <a class="left" href="#pos-1"></a>
+                    <a class="right" href="#pos-3"></a>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fuga enim minus laudantium reiciendis atque quo natus aliquam autem eaque? Excepturi repellendus praesentium ipsum fuga eos? Numquam minus voluptas et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime velit dolorem ullam minus cupiditate reiciendis. Qui, suscipit maiores iste beatae aspernatur, eligendi cumque officiis illum ad explicabo fugit nam id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate fuga molestiae excepturi vero sit nobis, explicabo labore iusto earum qui nihil quis repellendus eum atque veritatis at unde obcaecati?
+                </div>
+
+            </div>
+            <div id="pos-3" style="min-width: 100vw; height: max-content; background-color: blue; display: flex; position:relative;">
+                <div class="controls">
+                    <a class="left" href="#pos-2"></a>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fuga enim minus laudantium reiciendis atque quo natus aliquam autem eaque? ggggggggggggggggggggggggggggggggggggggggggggggggggggggggg Excepturi repellendus praesentium ipsum fuga eos? Numquam minus voluptas et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime velit dolorem ullam minus cupiditate reiciendis. Qui, suscipit maiores iste beatae aspernatur, eligendi cumque officiis illum ad explicabo fugit nam id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate fuga molestiae excepturi vero sit nobis, explicabo labore iusto earum qui nihil quis repellendus eum atque veritatis at unde obcaecati?
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
