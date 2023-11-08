@@ -1,0 +1,174 @@
+nav {
+    width: 100%;
+    height: 35px;
+    z-index: 30;
+    position: fixed;
+    background-image: url('../img/373258.jpg');
+    border-bottom: rgba(0, 0, 0, 0.5) 2px solid;
+    filter:brightness(50%);
+    transform: scale(1);
+    /*  adapter */
+    transform-origin: top right;
+    justify-content: right;
+}
+nav .nav {
+    width: 100%;
+}
+.navbutton {
+    height: 35px;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbutton:hover {
+    background-color: darkgray;
+    height: 40px;
+    transition: 0.4s;
+}
+    .container .pagecontainer .page .controls {
+        width: 100%;
+        height: calc(100% - 35px);
+        position: absolute;
+        overflow: hidden;
+        margin-top: -5px;
+    }
+    .container .pagecontainer .page .controls .left {
+        width: 15vw;
+        height: 100%;
+        display: flex;
+        position: relative;
+        float: left;
+        z-index: 15;
+
+
+    }
+
+    .container .pagecontainer .page .controls .right {
+        width: 15vw;
+        height: 100%;
+        display: flex;
+        position: relative;
+        float: right;
+
+    }
+
+    .container .pagecontainer .page .controls .right:hover {
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.6) 100%);
+        transition: 0.2s;
+    }
+    .container .pagecontainer .page .controls .left:hover {
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0) 100%);
+        transition: 0.2s;
+    }
+
+body {
+    margin:0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: visible;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.pagecontainer {
+
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.pagecontainer .page {    padding-top: 40px;scroll-behavior: smooth; max-width: 100vw}
+.page1 {
+    min-width: calc(100vw - 15px); height: max-content; min-height: 100vh; position:relative;
+    background: url(../img/gallery/rosa/bg_cottage.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+
+}
+.page2 {
+    min-width: calc(100vw - 15px); height: max-content; min-height: 100vh; position:relative;
+    background: url(../img/gallery/rosa/__rosa_arknights_drawn_by_katann__f0c39f483079578ee380de7d1a9f6fd8.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+
+}
+.page3 {
+    min-width: calc(100vw - 15px); height: max-content; min-height: 100vh; position:relative;
+    background: url(../img/gallery/rosa/bg_cottage_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+
+}
+.page4 {
+    min-width: calc(100vw - 15px); height: max-content; min-height: 100vh; position:relative;
+    background: url(../img/gallery/rosa/30_ex1_snowmount.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+
+}
+.page5 {
+    min-width: calc(100vw - 15px); height: max-content; min-height: 100vh; position:relative;
+    background: url(../img/gallery/rosa/__rosa_arknights_drawn_by_chihuri__25e65192442b0a27e6df8441ca28dc22.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+
+}
+.hidden {
+    overflow-y: hidden;
+    height: 95vh;
+}
+
+.layout{
+		height: max-content;
+		overflow-y: visible;
+		text-align: center;
+		padding: 35px 25px 15px 25px;
+		background-color: rgba(0, 0, 0, 0.7);
+        margin: auto;
+    color: white;
+
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.verbreak {width: 30px}
+.layout p {
+    font-size: 1.5em;
+}
+.layout h3 {
+    font-size: 1.5em;
+}
+@media (min-width: 1300px) {
+	.layout {
+		width: 1200px;
+	}
+}
+@media (max-width: 1300px) {
+
+	.layout {
+		width: 800px;
+	}
+}
+
+/*
+==================================================
+  #Mobile
+==================================================
+*/
+@media (max-width: 800px) {
+	.layout {
+    width: 100%;
+}
+}
