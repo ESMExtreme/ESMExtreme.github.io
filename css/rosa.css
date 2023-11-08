@@ -101,7 +101,7 @@ body {
 }
 .page2 {
     min-width: calc(100vw - 15px); height: max-content; min-height: 100vh; position:relative;
-    background: url(../img/gallery/rosa/__rosa_arknights_drawn_by_katann__f0c39f483079578ee380de7d1a9f6fd8.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+    background: url(../img/gallery/rosa/rosa_arknights_drawn_by_katann__f0c39f483079578ee380de7d1a9f6fd8.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
 
 }
 .page3 {
@@ -116,7 +116,7 @@ body {
 }
 .page5 {
     min-width: calc(100vw - 15px); height: max-content; min-height: 100vh; position:relative;
-    background: url(../img/gallery/rosa/__rosa_arknights_drawn_by_chihuri__25e65192442b0a27e6df8441ca28dc22.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
+    background: url(../img/gallery/rosa/rosa_arknights_drawn_by_chihuri__25e65192442b0a27e6df8441ca28dc22.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover">
 
 }
 .hidden {
