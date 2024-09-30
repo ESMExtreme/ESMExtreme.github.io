@@ -1272,7 +1272,7 @@ font-weight: 200;
 		overflow: hidden;
 	}
 	.toosmall::after {
-		content: "masz zbyt wąskie urządzonko :> Polecam przekręcić ekran czy coś ^^";
+		content: "zmień na tryb na komputer ^^";
 	}
 	.toosmall img {
 		height: 200px;
