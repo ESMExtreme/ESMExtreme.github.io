@@ -1097,6 +1097,19 @@ pointer-events: initial
 	justify-content: center;
 	
 }
+.layout em {
+	height: calc(100% - 20px);
+	z-index: 2;
+	position: relative;
+	color: grey;
+	font-size: 20px;
+	font-family: 'Mukta', sans-serif;
+	text-align: center;
+	font-weight: 200;	
+	margin-right: 150px;
+	justify-content: center;
+	margin: 0 25px 0 25px;
+}
 }
 
 
@@ -1252,6 +1265,19 @@ font-weight: 200;
 	left:0px
 	
 }
+.layout em {
+	height: calc(100% - 20px);
+	z-index: 2;
+	position: relative;
+	color: grey;
+	font-size: 20px;
+	font-family: 'Mukta', sans-serif;
+	text-align: center;
+	font-weight: 200;	
+	margin-right: 150px;
+	justify-content: center;
+	margin: 0 25px 0 25px;
+}
 }
 /*
 ==================================================
@@ -1300,6 +1326,19 @@ font-weight: 200;
 		justify-content: center;
 		margin: 0 25px 0 25px;
 	}
+	.layout em {
+		height: calc(100% - 20px);
+		z-index: 2;
+		position: relative;
+		color: grey;
+		font-size: 20px;
+		font-family: 'Mukta', sans-serif;
+		text-align: center;
+		font-weight: 200;	
+		margin-right: 150px;
+		justify-content: center;
+		margin: 0 25px 0 25px;
+	}
 .layout .sticky{
 		align-self: normal;
 		justify-self: normal;
@@ -1312,10 +1351,11 @@ font-weight: 200;
 		z-index: 15;
 		border-left: #8b8b8b 1px solid;
 		overflow: hidden;
+		box-sizing: border-box;
 	}
 .layout .sticky a .button {
-	border-right: #8b8b8b 1px solid;
-	width: calc(100% / 4 - 1px);
+	border-right: #8b88bb 1px solid;
+	width: calc((100% / 4) - 2px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1325,6 +1365,7 @@ font-weight: 200;
 	font-family: 'Mukta', sans-serif;
 	text-align: center;
 	font-weight: 200;
+	box-sizing: border-box;
 
 }
 .layout .reference img{
